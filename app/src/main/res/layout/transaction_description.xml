@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/transaction_description"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="22dp"/>
+
+
+
+        <include layout="@layout/date_layout"/>
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="33dp"/>
+
+
+        <include layout="@layout/trasaction_id_container"/>
+
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="33dp"/>
+
+        <include layout="@layout/received_settled_layout"/>
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="33dp"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/customerName"
+            android:layout_gravity="center"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:hint="Customer Name"
+            android:inputType="text"
+            android:enabled="false"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            app:met_floatingLabel="highlight"
+            app:met_underlineColor="@android:color/black"
+            app:met_primaryColor="@android:color/black"/>
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="22dp"/>
+
+
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:text="Fabric Type"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_width="110dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="Wash Type"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="Price"
+                android:textSize="20dp"
+                android:layout_width="95dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="22dp"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/regularFabric"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_marginBottom="2dp"
+                android:hint="Regular (kg)"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                app:met_floatingLabel="highlight"
+                app:met_textColor="@android:color/black"
+                app:met_underlineColor="@android:color/black"
+                app:met_primaryColor="@android:color/black"/>
+
+            <Spinner
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_width="110dp"
+                android:padding="7dp"
+                android:background="@drawable/dropdown_border"
+                android:id="@+id/spinnerRegular"
+                android:textAlignment="center" />
+
+
+            <TextView
+                android:id="@+id/txtRegularPrice"
+                android:text="0"
+                android:textSize="20dp"
+                android:layout_width="110dp"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="22dp"/>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/heavyFabric"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:hint="Heavy (kg)"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:enabled="false"
+                app:met_floatingLabel="highlight"
+                app:met_textColor="@android:color/black"
+                app:met_underlineColor="@android:color/black"
+                app:met_primaryColor="@android:color/black"/>
+
+            <Spinner
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_width="110dp"
+                android:padding="7dp"
+                android:background="@drawable/dropdown_border"
+                android:id="@+id/spinnerHeavy"
+                android:textAlignment="center" />
+
+
+
+            <TextView
+                android:id="@+id/txtHeavyPrice"
+                android:text="0"
+                android:textSize="20dp"
+                android:layout_width="110dp"
+                android:gravity="center"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="22dp"/>
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:hint="Days Late"
+                />
+
+
+            <Space
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_width="68dp"
+                />
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:hint="Fine" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/totalDays"
+                android:gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="0"
+                />
+
+
+            <Space
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_width="43dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/lateFine"
+                android:gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="0" />
+
+        </LinearLayout>
+
+
+
+        <Space
+            android:layout_height="22dp"
+            android:layout_width="wrap_content"
+            />
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:hint="Total Weight (kg)"
+                />
+
+
+            <Space
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_width="68dp"
+                />
+
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:hint="Total Price" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/totalWeight"
+                android:gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="0"
+                />
+
+
+            <Space
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_width="43dp"
+                />
+
+
+            <ImageView
+                android:src="@drawable/icon_peso"
+                android:layout_width="24dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:gravity="center"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:text="0" />
+
+        </LinearLayout>
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="22dp"/>
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btnSettle"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="Settle"
+            android:textSize="22dp"
+            app:buttonColor="@color/water"
+            app:shadowColor="@color/shadow"
+            app:shadowEnabled="true"
+            app:cornerRadius="32dp"
+            app:shadowHeight="5dp"
+            android:clickable="true"/>
+
+
+        <Space android:layout_width="match_parent"
+            android:layout_height="22dp"/>
+    </LinearLayout>
+
+
+</ScrollView>

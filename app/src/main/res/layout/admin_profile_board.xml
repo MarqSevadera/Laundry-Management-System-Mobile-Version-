@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="335dp"
+android:layout_height="100dp"
+android:orientation="horizontal"
+android:layout_gravity="center"
+android:layout_marginTop="30dp"
+android:background="@drawable/border"
+    >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="90dp"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="18dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/staffs"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/gray"
+        android:textSize="21sp"/>
+
+
+    <TextView
+        android:id="@+id/staff_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:freezesText="true"
+        android:text="0"
+        android:textColor="@color/water"
+        android:textSize="36dp"/>
+
+
+</LinearLayout>
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="90dp"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="18dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/lotr_code"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/gray"
+        android:textSize="21sp"/>
+
+
+    <TextView
+        android:id="@+id/code_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:freezesText="true"
+        android:gravity="center"
+        android:text="loading.."
+        android:textColor="@color/water"
+        android:textSize="22dp"/>
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="90dp"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="18dp"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/lotr_today"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="@color/gray"
+        android:textSize="21sp"/>
+
+
+    <TextView
+        android:id="@+id/today_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:freezesText="true"
+        android:text="3"
+        android:textColor="@color/water"
+        android:textSize="36dp"/>
+
+
+</LinearLayout>
+
+</LinearLayout>

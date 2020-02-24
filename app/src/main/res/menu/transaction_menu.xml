@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/new_transaction">
+
+    <item android:id = "@+id/menuSearch"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always">
+
+
+    </item>
+
+    <item android:name="newTransaction"
+        android:title="New Transaction"
+        android:id="@+id/new_transaction_action"
+        android:icon="@drawable/icon_new"
+        app:showAsAction="always">
+
+    </item>
+
+
+
+</menu>

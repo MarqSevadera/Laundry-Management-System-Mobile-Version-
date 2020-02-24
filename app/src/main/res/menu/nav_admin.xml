@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/admin_myProfile"
+          android:title="Profile"
+            android:icon="@drawable/nav_icon_profile"
+        ></item>
+
+
+    <item android:id= "@+id/admin_notif"
+        android:title="Staff Requests"
+        android:icon="@drawable/ring">
+
+    </item>
+
+
+    <item android:id="@+id/admin_staffs"
+        android:title="@string/staffs"
+        android:icon="@drawable/icon_staff">
+    </item>
+
+
+    <item android:id="@+id/admin_transactions"
+        android:title="@string/transactions"
+        android:icon="@drawable/icon_transactions">
+    </item>
+
+    <item android:id="@+id/admin_rate"
+          android:title="@string/rate"
+          android:icon="@drawable/icon_rate">
+
+    </item>
+
+
+
+    <item android:id="@+id/admin_logout"
+          android:title="@string/logout"
+          android:icon="@drawable/icon_logout">
+    </item>
+
+
+
+
+</menu>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:id= "@id/staff_profile"
+        android:title="Profile"
+        android:icon="@drawable/nav_icon_profile">
+    </item>
+
+    <item android:id="@+id/staff_transaction"
+        android:title="Transactions"
+        android:icon="@drawable/icon_transactions">
+    </item>
+
+
+    <item android:id="@+id/staff_rate"
+          android:title="Rate"
+          android:icon="@drawable/icon_rate">
+
+    </item>
+
+
+    <item android:id="@+id/staff_logout"
+        android:title="Logout"
+        android:icon="@drawable/icon_logout">
+    </item>
+
+
+
+
+</menu>

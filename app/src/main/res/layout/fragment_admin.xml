@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:id="@+id/fragment_admin"
+    tools:context="com.marquesevadera.lotr.Fragments.Admin.Signup">
+
+
+
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="260dp"
+            android:layout_height="210dp"
+            android:layout_gravity="center"
+            />
+
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/admin_fullName"
+        android:layout_gravity="center"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/lotr_fullname"
+        android:inputType="text"
+        android:text=""
+        app:met_floatingLabel="highlight"
+        app:met_textColor="@color/colorGranite"
+        app:met_textColorHint="@color/colorGranite"
+        app:met_underlineColor="@color/colorGranite"
+        app:met_primaryColor="@color/colorGranite"
+        app:met_singleLineEllipsis="true"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/admin_email"
+            android:layout_gravity="center"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/lotr_email"
+            android:inputType="textEmailAddress"
+            android:text=""
+            app:met_floatingLabel="highlight"
+            app:met_textColor="@color/colorGranite"
+            app:met_textColorHint="@color/colorGranite"
+            app:met_underlineColor="@color/colorGranite"
+            app:met_primaryColor="@color/colorGranite"
+            app:met_singleLineEllipsis="true"/>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/admin_password"
+            android:layout_gravity="center"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/lotr_password"
+            android:inputType="textPassword"
+            android:text=""
+            app:met_floatingLabel="highlight"
+            app:met_textColor="@color/colorGranite"
+            app:met_textColorHint="@color/colorGranite"
+            app:met_underlineColor="@color/colorGranite"
+            app:met_primaryColor="@color/colorGranite"
+            app:met_singleLineEllipsis="true"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/component_spacing" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/admin_register"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/lotr_register"
+            app:buttonColor="@color/water"
+            app:shadowColor="@color/shadow"
+            app:shadowEnabled="true"
+            app:cornerRadius="32dp"
+            app:shadowHeight="5dp"
+            android:clickable="true"/>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/component_spacing" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lotr_haveaccount"
+            android:textColor="@color/colorGranite"
+            android:textSize="16dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/component_spacing" />
+
+        <TextView
+            android:id="@+id/admin_loginhere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lotr_loginhere"
+            android:textSize="16dp"
+            android:textColor="@color/colorGranite"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"/>
+
+
+</LinearLayout>

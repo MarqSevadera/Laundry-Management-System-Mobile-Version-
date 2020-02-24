@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "726064411669",
+    "firebase_url": "https://lotr-bf059.firebaseio.com",
+    "project_id": "lotr-bf059",
+    "storage_bucket": "lotr-bf059.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726064411669:android:101f358c22cfcc27",
+        "android_client_info": {
+          "package_name": "com.marquesevadera.lotr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726064411669-4pv7tj1v34dslei8u0fstkr4etg75rn9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.marquesevadera.lotr",
+            "certificate_hash": "5f0d56d6239b3122883deca1d91cca4fb5c83b64"
+          }
+        },
+        {
+          "client_id": "726064411669-n14o8fdt92m9asik890vjeirv19c4nql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjC29a5zvZB7QKkuhqAuPeIDD_MYvMUcE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726064411669-n14o8fdt92m9asik890vjeirv19c4nql.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
